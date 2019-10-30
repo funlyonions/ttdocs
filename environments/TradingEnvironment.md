@@ -60,15 +60,20 @@ while True:
 That's because the code to run that exist directly inside of the `TradingStrategy` codebase. The command `run`, has abstractions of that code. Please refer to the Strategies codebase.
 
 
-## Key Functions:
+## Functions:
 
 To better understand what's inside of the `TradingEnvironment`, you should understand the notation. Everything that begins with an underscore `_` is a relatively private function. While everything that doesn't have the underscore is a public facing function. 
 
+
+### Private
 * `_take_action` - Determines a specific trade to be taken and executes it within the exchange.
 * `_next_observation` - Returns the next observation from the exchange.
 * `_get_reward` - Returns the reward for the current timestep.
 * `_done` - Returns whether or not the environment is done and should be restarted. The two key conditions to determine if the environment is completed is if either `90% of the funds are lost` or if there are `no more observations left`. 
 * `_info` - Returns any auxiliary, diagnostic, or debugging information for the current timestep.
+
+
+### Public
 * `step` - Run one timestep within the environment based on the specified action.
 * `reset` - Resets the state of the environment and returns an initial observation.
 * `render` - This sends an output of what's occuring in the gym enviornment for the user to keep track of.
