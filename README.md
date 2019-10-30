@@ -75,6 +75,7 @@ class SimulatedExchange(InstrumentExchange):
 
 Everything that inherits `SimulatedExchange` uses the specified kwargs to set the parameters.
 
+Therefore, even when we don't directly see the parameters inside of `FBMExchange`
 
 ```py
 exchange = FBMExchange(base_instrument='BTC', timeframe='1h', base_precision=4) # we're replacing the default base precision.

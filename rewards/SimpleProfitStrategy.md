@@ -1,3 +1,3 @@
-# SimpleProfitStrategy
+# Simple Profit Strategy
 
-Talk about profit strategy here
+A reward strategy that rewards the agent for profitable trades and prioritizes trading over not trading.
