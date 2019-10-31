@@ -66,11 +66,16 @@ To better understand what's inside of the `TradingEnvironment`, you should under
 
 
 ### Private
-* `_take_action` - Determines a specific trade to be taken and executes it within the exchange.
-* `_next_observation` - Returns the next observation from the exchange.
-* `_get_reward` - Returns the reward for the current timestep.
-* `_done` - Returns whether or not the environment is done and should be restarted. The two key conditions to determine if the environment is completed is if either `90% of the funds are lost` or if there are `no more observations left`. 
-* `_info` - Returns any auxiliary, diagnostic, or debugging information for the current timestep.
+* `_take_action`
+  * Determines a specific trade to be taken and executes it within the exchange.
+* `_next_observation` 
+  * Returns the next observation from the exchange.
+* `_get_reward`
+  * Returns the reward for the current timestep.
+* `_done`
+  * Returns whether or not the environment is done and should be restarted. The two key conditions to determine if the environment is completed is if either `90% of the funds are lost` or if there are `no more observations left`. 
+* `_info` 
+  * Returns any auxiliary, diagnostic, or debugging information for the current timestep.
 
 
 ### Public

@@ -20,12 +20,12 @@ When we get the action from the RL agent, the environment will see that number i
 
 Each property and property setter.
 
-* dtype
+* `dtype`
   * A type or str corresponding to the dtype of the `action_space`.
-* exchange
+* `exchange`
   * The exchange being used by the current trading environment.
   * This will be set by the trading environment upon initialization. Setting the exchange causes the strategy to reset.
-* action_space
+* `action_space`
   * The shape of the actions produced by the strategy. This takes in a `gym.space` and is different for each given strategy.
 
 ## Functions
