@@ -5,6 +5,16 @@ The feature pipeline has a setup that resembles the keras library. The concept i
 1. We have an observation of data
 2. We take the observation and effectively run it through all declared ways of transforming that data and turn the result into a feature space.
 
+Just like the kera's sequential model, it accepts lists inside of it constructor:
+
+```py
+model = Sequential([
+    Dense(32, input_shape=(500,)),
+    Dense(32)
+])
+```
+
+
 ## Class Parameters
 * `steps` 
   * A list of feature transformations to apply to observations.
@@ -39,6 +49,7 @@ for transformer in self._steps:
     observations = transformer.transform(observations, input_space)
 ```
 
+At the end the observations are converted into a ndarray so that they can be interpreted by the agent.
 
 ### Public
 

@@ -3,8 +3,6 @@
 A transformer for differencing values within a feature pipeline by a fractional order. It removes the stationarity of the dataset available in realtime. To learn more about why non-stationarity should be converted to stationary information, please look at the blog [here](https://towardsdatascience.com/preserving-memory-in-stationary-time-series-6842f7581800).
 
 
-
-
 ## Class Parameters
 * `columns`
   *  A list of column names to difference.

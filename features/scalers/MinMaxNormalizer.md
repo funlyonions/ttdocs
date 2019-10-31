@@ -1,5 +1,7 @@
 # MinMaxNormalizer
 
+A transformer for normalizing values within a feature pipeline by the column-wise extrema.
+
 ## Class Parameters
 
 

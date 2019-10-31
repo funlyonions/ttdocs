@@ -2,7 +2,7 @@
 
 An abstract strategy for determining the action to take at each timestep within a trading environment. Please review the overview to understand what this Abstraction is.
 
-## What is an Action
+## What is an Action?
 
 This is a review of what was mentioned inside of the overview section. It explains how a RL operates. You'll better understand what an action is in context of an observation space and reward. At the same time, hopefully this will be a proper refresher.
 
@@ -14,6 +14,8 @@ Let's look at a good example. Lets say we're trying to balance a cart with a pol
 * 1	- Push cart to the right
 
 When we get the action from the RL agent, the environment will see that number instead of a name. We can create lists, tuples, and a box.
+
+![Watch Link Run Around In Circles](../gifs/zelda_bow.gif)
 
 
 ## Setters & Properties
@@ -28,6 +30,7 @@ Each property and property setter.
 * `action_space`
   * The shape of the actions produced by the strategy. This takes in a `gym.space` and is different for each given strategy.
 
+
 ## Functions
 
 * reset
@@ -35,3 +38,4 @@ Each property and property setter.
 * get_trade
   * Get the trade to be executed on the exchange based on the action provided.
   * Usually this is the way we distill the information generated from the `action_space`. 
+
