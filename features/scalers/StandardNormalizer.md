@@ -1,6 +1,6 @@
 # StandardNormalizer
 
-A transformer for differencing values within a feature pipeline by a fractional order.
+A transformer for normalizing values within a feature pipeline by removing the mean and scaling to unit variance.
 
 ## Class Parameters
 

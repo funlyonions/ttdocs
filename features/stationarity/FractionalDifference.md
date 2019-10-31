@@ -1,6 +1,6 @@
 # FractionalDifference
 
-A transformer for differencing values within a feature pipeline by a fractional order.
+A transformer for differencing values within a feature pipeline by a fractional order. It removes the stationarity of the dataset available in realtime. To learn more about why non-stationarity should be converted to stationary information, please look at the blog [here](https://towardsdatascience.com/preserving-memory-in-stationary-time-series-6842f7581800).
 
 
 
@@ -17,7 +17,7 @@ A transformer for differencing values within a feature pipeline by a fractional 
 
 ## Functions
 
-Below are the functions that the `InstrumentExchange` uses to effectively operate. 
+Below are the functions that the `FractionalDifference` uses to effectively operate. 
 
 ### Private
 
