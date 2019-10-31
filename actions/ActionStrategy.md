@@ -15,7 +15,7 @@ Let's look at a good example. Lets say we're trying to balance a cart with a pol
 
 When we get the action from the RL agent, the environment will see that number instead of a name. We can create lists, tuples, and a box.
 
-![Watch Link Run Around In Circles](../gifs/zelda_bow.gif)
+![Watch Link Run Around In Circles](../gifs/cartpole.gif)
 
 
 ## Setters & Properties

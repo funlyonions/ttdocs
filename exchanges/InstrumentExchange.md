@@ -4,7 +4,7 @@ An abstract instrument exchange for use within a trading environment.
 
 ## Why Have `InstrumentalExchange`
 
-Inside of the README, you'll have seen the reason why we have the higher level abstract. It's so we can enact dependency injection in other parts of the application. It looms over all other parts of the application.
+Inside of the [README](../README.md), you'll have seen the reason why we have the higher level abstract. It's so we can enact dependency injection in other parts of the application. It looms over all other parts of the application.
 
 ```py
 class InstrumentExchange(object, metaclass=ABCMeta):

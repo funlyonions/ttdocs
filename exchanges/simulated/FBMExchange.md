@@ -1,6 +1,19 @@
-# FBMExchange
+# FBMExchange - Fractal Brownian Motion
 
-A simulated instrument exchange, in which the price history is based off a fractional brownian motion model with supplied parameters.
+A simulated instrument exchange, in which the price history is based off a fractional brownian motion model with supplied parameters. 
+
+## What is Fractal Brownian Motion?
+
+Fractial Brownian Motion is apart of a class of differential equations called stochastic processes.
+
+`Stochastic processes` are an accumulation of random variables that help us describe the emergence of a system over time. The power of them is that they can be used to describe all of the world around us. In fact, during early 1900 one of the first active uses of Stochastic Processes was with valuing stock options. It was called a Brownian Motion, developed by a French mathematician named Louis Bachelier. It can also be used for looking at random interactions of molecules over time. We use this method to solve reinforcement learning's sample inefficiency problem.
+
+
+![Stochastic Processes](../../gifs/stochastic_processes.gif). 
+ 
+
+ We generate prices, and train on that. Simple.
+
 
 ## Class Parameters
 * `base_instrument`
